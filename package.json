@@ -4,6 +4,7 @@
         "node": ">=16"
     },
     "scripts": {
+        "rm": "rm -rf ./data",
         "start": "./utils/mkdir_data_cp_example.sh && ts-node index.ts && ./utils/rm_old_if_equal_new.sh",
         "watch": "nodemon --exec npm start"
     },
