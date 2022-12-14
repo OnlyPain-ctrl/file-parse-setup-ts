@@ -4,8 +4,7 @@
         "node": ">=16"
     },
     "scripts": {
-        "folders": "mkdir -p data && cp -n ./example/* ./data",
-        "start": "npm run folders && ts-node index.ts",
+        "start": "./utils/mkdir_data_cp_example.sh && ts-node index.ts && ./utils/rm_old_if_equal_new.sh",
         "watch": "nodemon --exec npm start"
     },
     "nodemonConfig": {
